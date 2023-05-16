@@ -7,41 +7,43 @@
     <link type="image/x-icon" href="img/square-root-.ico" rel="shortcut icon" />
     <title>Корень из числа</title>
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+
     <script src="script.js" defer></script>
   </head>
   <body>
-    <main class="main">
-      <div class="container main__container">
-        <form action="" class="main__form form form--base">
+    <main>
+      <div class="screen">
+        <form action="" class="main__form form">
           <div class="form__number">
             <label for="number" class="form__label">Введите число:</label>
             <input
               type="number"
+              id="number"
+              class="form__input"
               name="number"
               min="-9007199254740990"
               max="9007199254740990"
               placeholder="0"
-              autofocus
               required
             />
           </div>
-          <div class="form__btn btn">
-            <input type="button" name="number" value="Вычислить корень" required />
-          </div>
+          <button class="form__btn">Вычислить корень</button>
         </form>
 
-        <form hidden action="" class="main__form form form--base">
+        <form hidden action="" class="main__form form">
           <div class="form__number">
             <div class="form__real-part">
-              <label for="number" class="form__label">Введите число:</label>
+              <label for="real-part" class="form__label">Введите число:</label>
               <input
                 type="number"
+                id="real-part"
+                class="form__input"
                 name="real-part"
                 min="-9007199254740990"
                 max="9007199254740990"
                 placeholder="0"
-                autofocus
                 required
               />
               <span class="form__deskr">Действительная часть</span>
@@ -71,28 +73,26 @@
               <input
                 type="number"
                 name="complex-part"
+                class="form__input"
                 min="-9007199254740990"
                 max="9007199254740990"
                 placeholder="0"
-                autofocus
                 required
               />
               <span class="form__deskr">Мнимая часть</span>
-              <span class="form__deskr--big">i</span>
+              <span class="form__deskr form__deskr--big">i</span>
             </div>
           </div>
-          <div class="form__btn btn">
-            <input type="button" name="number" value="Вычислить корень" required />
-          </div>
+          <button class="form__btn">Вычислить корень</button>
         </form>
 
         <div class="main__result">
           <label for="result" class="form__label">Результат:</label>
-          <input type="number" nsme="result" disabled />
+          <input type="number" class="form__input" id="result" name="result" disabled />
         </div>
 
-        <div class="main__settings settings">
-          <div class="settings__accuracy accuracy">
+        <ul class="main__settings settings">
+          <li class="settings__item accuracy">
             <h2 class="settings__title">Кол-во знаков после запятой:</h2>
             <input
               class="settings__input accuracy__input"
@@ -103,8 +103,8 @@
               placeholder="5"
               required
             />
-          </div>
-          <div class="settings__complex complex">
+          </li>
+          <li class="settings__item complex">
             <h2 class="settings__title">Комплексное число:</h2>
             <input
               class="settings__input complex__input"
@@ -115,20 +115,18 @@
               placeholder="5"
               required
             />
-          </div>
-        </div>
+          </li>
+        </ul>
 
-        <div class="main__lang">
+        <button class="main__lang lang">
+          <!-- add lang--active -->
           <svg
             version="1.1"
             id="Capa_1"
             xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink"
-            x="0px"
-            y="0px"
             viewBox="0 0 611.926 611.926"
-            style="enable-background: new 0 0 611.926 611.926"
-            xml:space="preserve"
+            fill="none"
           >
             <g>
               <path
@@ -153,8 +151,13 @@
               />
             </g>
           </svg>
-          <span>ru</span>
-        </div>
+          <ul class="lang__list">
+            <li class="lang__item lang__item--active">ru</li>
+            <li hidden class="lang__item">en</li>
+            <li hidden class="lang__item">zh</li>
+            <li hidden class="lang__item">es</li>
+          </ul>
+        </button>
       </div>
     </main>
   </body>
