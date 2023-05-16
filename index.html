@@ -17,7 +17,7 @@
       <div class="screen">
         <form action="" class="main__form form">
           <div class="form__number">
-            <label for="number" class="form__label">Введите число:</label>
+            <label for="number" class="form__label changesLang">Введите число:</label>
             <input
               type="number"
               id="number"
@@ -29,13 +29,13 @@
               required
             />
           </div>
-          <button class="form__btn">Вычислить корень</button>
+          <button class="form__btn changesLang">Вычислить корень</button>
         </form>
 
         <form hidden action="" class="main__form form">
-          <div class="form__number">
+          <div class="form__number form__number--complex">
             <div class="form__real-part">
-              <label for="real-part" class="form__label">Введите число:</label>
+              <label for="real-part" class="form__label changesLang">Введите число:</label>
               <input
                 type="number"
                 id="real-part"
@@ -46,7 +46,7 @@
                 placeholder="0"
                 required
               />
-              <span class="form__deskr">Действительная часть</span>
+              <span class="form__deskr changesLang">Действительная часть</span>
             </div>
             <svg
               width="27"
@@ -79,11 +79,11 @@
                 placeholder="0"
                 required
               />
-              <span class="form__deskr">Мнимая часть</span>
+              <span class="form__deskr changesLang">Мнимая часть</span>
               <span class="form__deskr form__deskr--big">i</span>
             </div>
           </div>
-          <button class="form__btn">Вычислить корень</button>
+          <button class="form__btn changesLang">Вычислить корень</button>
         </form>
 
         <div class="main__result">
@@ -93,7 +93,7 @@
 
         <ul class="main__settings settings">
           <li class="settings__item accuracy">
-            <h2 class="settings__title">Кол-во знаков после запятой:</h2>
+            <h2 class="settings__title changesLang">Кол-во знаков после запятой:</h2>
             <input
               class="settings__input accuracy__input"
               type="number"
@@ -105,7 +105,7 @@
             />
           </li>
           <li class="settings__item complex">
-            <h2 class="settings__title">Комплексное число:</h2>
+            <h2 class="settings__title changesLang">Комплексное число:</h2>
             <input
               class="settings__input complex__input"
               type="checkbox"
@@ -119,7 +119,6 @@
         </ul>
 
         <button class="main__lang lang">
-          <!-- add lang--active -->
           <svg
             version="1.1"
             id="Capa_1"
@@ -154,8 +153,8 @@
           <ul class="lang__list">
             <li class="lang__item lang__item--active">ru</li>
             <li hidden class="lang__item">en</li>
-            <li hidden class="lang__item">zh</li>
             <li hidden class="lang__item">es</li>
+            <li hidden class="lang__item">fr</li>
           </ul>
         </button>
       </div>
