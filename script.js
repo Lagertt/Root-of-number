@@ -139,8 +139,12 @@ accurInput.addEventListener('input', (e) => {
 
   const value = +accurInput.value;
   if (value > max) {
+    alert('Error: the number exceeds the allowable limit');
+
     accurInput.value = max;
   } else if (value < min) {
+    alert('Error: the number exceeds the allowable limit');
+
     accurInput.value = min;
   }
 });
@@ -153,8 +157,12 @@ numberInputs.forEach((input) => {
 
     const value = +input.value;
     if (value > max) {
+      alert('Error: the number exceeds the allowable limit');
+
       input.value = max;
     } else if (value < min) {
+      alert('Error: the number exceeds the allowable limit');
+
       input.value = min;
     }
   });
@@ -169,7 +177,9 @@ complInput.forEach((input) => {
     const value = +input.value;
     if (value > max) {
       input.value = max;
+      alert('Error: the number exceeds the allowable limit');
     } else if (value < min) {
+      alert('Error: the number exceeds the allowable limit');
       input.value = min;
     }
   });
