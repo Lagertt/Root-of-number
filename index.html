@@ -21,10 +21,8 @@
             <input
               type="number"
               id="number"
-              class="form__input"
+              class="form__input form__input--num"
               name="number"
-              min="-9007199254740990"
-              max="9007199254740990"
               placeholder="0"
               required
             />
@@ -39,10 +37,8 @@
               <input
                 type="number"
                 id="real-part"
-                class="form__input"
+                class="form__input form__input--compl"
                 name="real-part"
-                min="-9007199254740990"
-                max="9007199254740990"
                 placeholder="0"
                 required
               />
@@ -73,9 +69,7 @@
               <input
                 type="number"
                 name="complex-part"
-                class="form__input"
-                min="-9007199254740990"
-                max="9007199254740990"
+                class="form__input form__input--compl"
                 placeholder="0"
                 required
               />
@@ -87,8 +81,8 @@
         </form>
 
         <div class="main__result">
-          <label for="result" class="form__label">Результат:</label>
-          <input type="number" class="form__input" id="result" name="result" disabled />
+          <label for="result" class="form__label changesLang">Результат:</label>
+          <input name="result" type="text" class="form__input" id="result" name="result" disabled />
         </div>
 
         <ul class="main__settings settings">
@@ -98,23 +92,13 @@
               class="settings__input accuracy__input"
               type="number"
               name="accuracy"
-              min="0"
-              max="15"
-              placeholder="5"
+              value="5"
               required
             />
           </li>
           <li class="settings__item complex">
             <h2 class="settings__title changesLang">Комплексное число:</h2>
-            <input
-              class="settings__input complex__input"
-              type="checkbox"
-              name="complex"
-              min="0"
-              max="15"
-              placeholder="5"
-              required
-            />
+            <input class="settings__input complex__input" type="checkbox" name="complex" required />
           </li>
         </ul>
 
