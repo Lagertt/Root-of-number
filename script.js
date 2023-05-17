@@ -11,7 +11,7 @@ const langBtn = document.querySelector('.lang');
 const langItem = document.querySelectorAll('.lang__item');
 
 langBtn.addEventListener('click', (event) => {
-  if (event.target.nodeName != 'svg') return;
+  if (event.target.nodeName != 'path' && event.target.nodeName != 'svg') return;
   openLang();
 });
 

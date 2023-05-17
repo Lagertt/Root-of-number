@@ -173,11 +173,13 @@ body {
   transition: none;
 }
 
-.lang .lang__item:hover {
+.lang .lang__item:hover,
+.lang .lang__item:active {
   color: inherit;
 }
 
-.lang:hover {
+.lang:hover,
+.lang:active {
   color: var(--color-gray);
 }
 
@@ -201,7 +203,8 @@ body {
 }
 
 .lang__item--active,
-.lang--active:hover {
+.lang--active:hover,
+.lang--active:active {
   color: inherit;
 }
 
@@ -251,4 +254,50 @@ body {
 
 .form__real-part .form__label {
   min-width: 250px;
+}
+
+/* ////////////////////mobile//////////////////////////// */
+
+@media (max-width: 600px) {
+  .screen {
+    width: 340px;
+    padding: 30px;
+    margin-top: 2vh;
+    height: 750px;
+  }
+
+  .lang {
+    font-size: 24px;
+  }
+
+  .lang svg {
+    max-width: 50px;
+    margin-right: 10px;
+    fill: currentColor;
+  }
+
+  .form__number--complex {
+    flex-direction: column;
+  }
+
+  .form__input--compl {
+    width: 270px;
+  }
+
+  .form__deskr--big {
+    right: -100px;
+    bottom: 33px;
+  }
+
+  .form__number svg {
+    align-self: end;
+  }
+
+  .settings__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .settings {
+    margin-top: 60px;
+  }
 }
