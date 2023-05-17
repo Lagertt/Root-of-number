@@ -97,8 +97,6 @@ function calcRoot(event) {
   }
 }
 
-function toComplex(a) {}
-
 function complexRoot(x, y, accur) {
   let r = Math.sqrt(x * x + y * y);
   let arg = x == 0 ? Math.PI : Math.atan(y / x);
