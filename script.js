@@ -49,10 +49,10 @@ function changeLanguage(lang) {
   });
 
   const langs = {
-    en: '["Enter Number:", "Calculate Root", "Enter number:", "Real part", "Imaginary part", "Calculate Root", "Result", "Number of decimal places:", "Complex number:"]',
-    ru: '["Введите число:","Вычислить корень", "Введите число:", "Действительная часть", "Мнимая часть", "Вычислить корень", "Результат", "Кол-во знаков после запятой:", "Комплексное число:"]',
-    es: '["Introduzca un número:", "calcular raíz", " Introduzca un número:", "parte Real", "parte Imaginaria", "Calcular raíz", "Resultado", "número de decimales:", " número Complejo:"]',
-    fr: '["Entrer un nombre:", "calculer la racine", " Entrer un nombre:", "partie Réelle", "partie Imaginaire", "Calculer la racine", "Résultat", "nombre décimal:", " nombre Complexe:"]',
+    en: '["Enter Number:", "Calculate Root", "Enter number:", "Real part", "Imaginary part", "Calculate Root", "Result", "Number of decimal places:", "Complex number:", "Ask a question"]',
+    ru: '["Введите число:","Вычислить корень", "Введите число:", "Действительная часть", "Мнимая часть", "Вычислить корень", "Результат", "Кол-во знаков после запятой:", "Комплексное число:", "Задать вопрос"]',
+    es: '["Introduzca un número:", "calcular raíz", "Introduzca un número:", "parte Real", "parte Imaginaria", "Calcular raíz", "Resultado", "número de decimales:", "número Complejo:", "preguntar"]',
+    fr: '["Entrer un nombre:", "calculer la racine", "Entrer un nombre:", "partie Réelle", "partie Imaginaire", "Calculer la racine", "Résultat", "nombre décimal:", "nombre Complexe:", "poser une question"]',
   };
 
   for (let i = 0; i < allText.length; i++) {

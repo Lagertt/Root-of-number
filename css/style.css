@@ -212,6 +212,36 @@ body {
   color: var(--color-light);
 }
 
+.main__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ////////////////////support//////////////////////////// */
+.main__support {
+  display: flex;
+  align-items: center;
+  color: inherit;
+  font-size: 16px;
+}
+
+.support__btn {
+  background-color: transparent;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  margin-left: 10px;
+  color: inherit;
+  padding: 5px 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.support__btn:hover,
+.support__btn:active {
+  border: 2px solid var(--color-gray);
+}
+
 /* /////////////////////////////////complex////////////////////// */
 
 .form__number {
