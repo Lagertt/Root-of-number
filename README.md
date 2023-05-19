@@ -1,6 +1,6 @@
 # Root-of-number<img src="img/square-root-.ico" width="40" style="margin-left:10px">
 
-<img src="img/Preview.ico" height="500">
+<img src="img/Preview.png" height="500">
 
 [Ссылка на деплой](https://lagertt.github.io/Root-of-number/)
 
