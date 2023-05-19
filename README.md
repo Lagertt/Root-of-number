@@ -1,4 +1,8 @@
-# Root-of-number
+# Root-of-number<img src="img/square-root-.ico" width="40" style="margin-left:10px">
+
+<img src="img/Preview.ico" height="500">
+
+[Ссылка на деплой](https://lagertt.github.io/Root-of-number/)
 
 Данный проект - это одна из лабораторных по предмету "Коллективная методы разработки". Нас разбили на маленькие команды по 3-4 человека, я отвечала за разработку и дизайн.
 
